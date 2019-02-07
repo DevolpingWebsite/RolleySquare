@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Level03.unity
+  isLoaded: 0
+  isActive: 0

@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -530159753, guid: 68c7e4565cde54155bb78d8e935f1dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 3
+  lastUpdatedAtString: 2019-02-07T20:20:02.208+00:00
+  initializedAtString: 2019-02-07T19:31:25.877+00:00
+  log:
+  - commitID: 4cbb1ed56a8c5bf4dc2599ce5511db1d20469d62
+    mergeA: 
+    mergeB: 
+    authorName: LW
+    authorEmail: 45142670+DevolpingWebsite@users.noreply.github.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Delete .gitignore
+    description: Delete .gitignore
+    timeString: 2019-02-07T20:15:39.000+00:00
+    commitTimeString: 2019-02-07T20:15:39.000+00:00
+    changes:
+    - path: .gitignore
+      fullPath: C:\Users\walto\Desktop\Video Game\.gitignore
+      projectPath: .gitignore
+      originalPath: 
+      status: 5
+      staged: 0
+  - commitID: b25992e917aa743404e87db2744f6aa5b9e65684
+    mergeA: 
+    mergeB: 
+    authorName: LW
+    authorEmail: 45142670+DevolpingWebsite@users.noreply.github.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Initial commit
+    description: Initial commit
+    timeString: 2019-02-07T20:10:58.000+00:00
+    commitTimeString: 2019-02-07T20:10:58.000+00:00
+    changes:
+    - path: .gitignore
+      fullPath: C:\Users\walto\Desktop\Video Game\.gitignore
+      projectPath: .gitignore
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: README.md
+      fullPath: C:\Users\walto\Desktop\Video Game\README.md
+      projectPath: README.md
+      originalPath: 
+      status: 4
+      staged: 0
