@@ -3,17 +3,18 @@
 --- !u!114 &1
 MonoBehaviour:
   m_ObjectHideFlags: 61
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1109517887, guid: 68c7e4565cde54155bb78d8e935f1dd4, type: 3}
+  m_Script: {fileID: 1109517887, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2019-02-07T20:15:15.979+00:00
-  initializedAtString: 2019-02-07T19:31:25.758+00:00
+  lastUpdatedAtString: 2019-07-20T16:26:23.062+01:00
+  initializedAtString: 2019-07-20T15:39:37.856+01:00
   currentGitRemote:
     name: origin
     url: https://github.com/DevolpingWebsite/RolleySquare
@@ -24,13 +25,13 @@ MonoBehaviour:
     token: 
   currentGitBranch:
     name: master
-    tracking: 
+    tracking: origin/master
   currentConfigBranch:
     name: master
     remote:
-      name: 
-      url: 
-    trackingBranch: 
+      name: origin
+      url: https://github.com/DevolpingWebsite/RolleySquare
+    trackingBranch: master
   currentConfigRemote:
     name: origin
     url: https://github.com/DevolpingWebsite/RolleySquare
