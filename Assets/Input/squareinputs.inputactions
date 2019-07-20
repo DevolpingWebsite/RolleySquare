@@ -1,0 +1,71 @@
+{
+    "name": "squareinputs",
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "37f3a3f4-8d06-4d9e-969f-7536dcbeff79",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Button",
+                    "id": "aa59fcf9-ab31-4af3-a219-32e06c9b16fc",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Grow",
+                    "type": "Button",
+                    "id": "87db6063-50ae-43ae-ba5e-b2b55b48226a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Shrink",
+                    "type": "Button",
+                    "id": "377eed01-5ab1-42fb-a964-73225255ef4a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7cf2ae1d-06bb-422e-b3ad-e6d6fb17c71f",
+                    "path": "<HID::DragonRise Inc.   Generic   USB  Joystick   Joystick>/Stick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5a07c262-8779-4526-9615-c85628b9992d",
+                    "path": "<HID::DragonRise Inc.   Generic   USB  Joystick   Joystick>/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grow",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c2032cf2-8ce1-43e1-96a4-8057e3adfacb",
+                    "path": "<HID::DragonRise Inc.   Generic   USB  Joystick   Joystick>/button1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shrink",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
