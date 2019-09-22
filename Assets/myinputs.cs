@@ -18,6 +18,7 @@ public class myinputs : MonoBehaviour
          controls.Gameplay.Move.canceled += context => move = Vector2.zero; 
          controls.Gameplay.Grow.performed += context => Grow();
          controls.Gameplay.Shrink.performed += context => Shrink();
+         controls.Gameplay.Jump.performed += context => Jump();
          
     }
 
@@ -35,6 +36,11 @@ public class myinputs : MonoBehaviour
      {
          Vector2 m = new Vector2(move.x, 0) * 10f * Time.deltaTime;
          transform.Translate(m, Space.World);
+     }
+
+     void Jump()
+     {
+        gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * 500f);
      }
 
     void OnEnable()
