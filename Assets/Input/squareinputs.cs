@@ -40,6 +40,14 @@ public class Squareinputs : IInputActionCollection
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""6fd6202b-e6a6-47be-8029-71238e1048fc"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -75,6 +83,17 @@ public class Squareinputs : IInputActionCollection
                     ""action"": ""Shrink"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2e557c65-59b2-4a6c-bacb-615805f93fc1"",
+                    ""path"": ""<HID::DragonRise Inc.   Generic   USB  Joystick   Joystick>/button4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -86,6 +105,7 @@ public class Squareinputs : IInputActionCollection
         m_Gameplay_Move = m_Gameplay.GetAction("Move");
         m_Gameplay_Grow = m_Gameplay.GetAction("Grow");
         m_Gameplay_Shrink = m_Gameplay.GetAction("Shrink");
+        m_Gameplay_Jump = m_Gameplay.GetAction("Jump");
     }
 
     ~Squareinputs()
@@ -138,6 +158,7 @@ public class Squareinputs : IInputActionCollection
     private readonly InputAction m_Gameplay_Move;
     private readonly InputAction m_Gameplay_Grow;
     private readonly InputAction m_Gameplay_Shrink;
+    private readonly InputAction m_Gameplay_Jump;
     public struct GameplayActions
     {
         private Squareinputs m_Wrapper;
@@ -145,6 +166,7 @@ public class Squareinputs : IInputActionCollection
         public InputAction @Move => m_Wrapper.m_Gameplay_Move;
         public InputAction @Grow => m_Wrapper.m_Gameplay_Grow;
         public InputAction @Shrink => m_Wrapper.m_Gameplay_Shrink;
+        public InputAction @Jump => m_Wrapper.m_Gameplay_Jump;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -163,6 +185,9 @@ public class Squareinputs : IInputActionCollection
                 Shrink.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnShrink;
                 Shrink.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnShrink;
                 Shrink.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnShrink;
+                Jump.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnJump;
+                Jump.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnJump;
+                Jump.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnJump;
             }
             m_Wrapper.m_GameplayActionsCallbackInterface = instance;
             if (instance != null)
@@ -176,6 +201,9 @@ public class Squareinputs : IInputActionCollection
                 Shrink.started += instance.OnShrink;
                 Shrink.performed += instance.OnShrink;
                 Shrink.canceled += instance.OnShrink;
+                Jump.started += instance.OnJump;
+                Jump.performed += instance.OnJump;
+                Jump.canceled += instance.OnJump;
             }
         }
     }
@@ -185,5 +213,6 @@ public class Squareinputs : IInputActionCollection
         void OnMove(InputAction.CallbackContext context);
         void OnGrow(InputAction.CallbackContext context);
         void OnShrink(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
     }
 }
